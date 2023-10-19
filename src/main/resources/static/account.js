@@ -19,13 +19,14 @@ function write(){
 
 read();
 function read(){
+    console.log('read실행');
     $.ajax({
             url : "/account",
             method : "get",
             data : {},
             success : r=>{
                 console.log('get통신성공');console.log(r)
-
+/*
                 let input=document.querySelector('.input');
                 input.innerHTML=
                 `
@@ -34,7 +35,7 @@ function read(){
                         <button onclick="write()"type="button">등록</button>
                 `;
 
-
+*/
                 let html=``;
                 console.log('html');console.log(html);
                 r.forEach(e=>{
